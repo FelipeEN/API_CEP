@@ -15,9 +15,10 @@ form{
     flex-direction: column;
     align-items: flex-start;
     border: 1px solid;
-    padding: 12px;
-    border-radius: 12px;
+    padding: 12; 
     
+    border-radius: 12px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
 }
 
 input{
@@ -40,6 +41,8 @@ input{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+      box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
  
 
 }
@@ -55,7 +58,7 @@ h1{
     font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
     font-weight: 400;
 
-    margin-top: 10px;
+    margin-top: 35px;
     padding: 10px 16px;
     
     
@@ -70,6 +73,8 @@ h1{
     transition:   0.3s ease;
   
    margin-bottom: 25px;
+
+
 }
 
 button:hover{
@@ -119,6 +124,6 @@ body.dark-mode #contador{
     
     cursor: pointer;
     transition:   0.3s ease;
-  
-   margin-bottom: 25px;
+    margin-left: 12px;
+    margin-bottom: 25px;
 }
