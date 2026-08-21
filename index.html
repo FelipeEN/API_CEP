@@ -18,22 +18,40 @@
             <div id="conteudo">
 
                 <h1>Insira seu CEP</h1>
-                <form method="#" id="meuFormulario">
-                        <label>Cep:
-                        <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
-                        onblur="pesquisacep(this.value);" /></label><br />
-                        <label>Rua:
-                        <input name="rua" type="text" id="rua" size="60" /></label><br />
-                        <label>Bairro:
-                        <input name="bairro" type="text" id="bairro" size="40" /></label><br />
-                        <label>Cidade:
-                        <input name="cidade" type="text" id="cidade" size="40" /></label><br />
-                        <label>Estado:
-                        <input name="uf" type="text" id="uf" size="2" /></label><br />
-                        <label>IBGE:
-                        <input name="ibge" type="text" id="ibge" size="8" /></label><br />
+                <form id="meuFormulario">
+                    <div class="form-group">
+                        <label for="cep">CEP</label>
+                        <input name="cep" type="text" id="cep" maxlength="9" onblur="pesquisacep(this.value);" />
+                    </div>
 
-                        <button id="btnFormmulario">enviar</button>
+                    <div class="form-group">
+                        <label for="rua">Rua</label>
+                        <input name="rua" type="text" id="rua" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bairro">Bairro</label>
+                        <input name="bairro" type="text" id="bairro" />
+                    </div>
+
+                    <div class="form-group-row">
+                        <div class="form-group flex-2">
+                        <label for="cidade">Cidade</label>
+                        <input name="cidade" type="text" id="cidade" />
+                        </div>
+
+                        <div class="form-group flex-1">
+                        <label for="uf">Estado (UF)</label>
+                        <input name="uf" type="text" id="uf" maxlength="2" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ibge">IBGE</label>
+                        <input name="ibge" type="text" id="ibge" />
+                    </div>
+
+                    <button type="submit" id="btnFormmulario">Enviar</button>
                 </form>
             </div>
         </div>
