@@ -4,18 +4,28 @@
   box-sizing: border-box;
 }
 body{
-   
-    flex: 1;
+    min-height: 100vh;
+    overflow: hidden;
+
     background-color: rgb(245, 245, 245);
     padding: 12px;
+        background-image: url('./imagem/brazil-states-map.png');
+    background-position-x:center ;
+    background-position-y:center ;
+    background-size: 75rem;
+    background-repeat: no-repeat;
+    background-position: right;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
 }
 
-form{   
+form{ 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     border: 1px solid;
-    padding: 12; 
+    padding: 12px; 
+    
+    
     
     border-radius: 12px;
     box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
@@ -34,15 +44,15 @@ input{
 #main{
     height: 100%;
     width: 100%;
-  
+    
     font-family: "Open Sans", sans-serif;
-
+    
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
 
-      box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
+   
  
 
 }
@@ -54,7 +64,9 @@ h1{
 }
 
 #theme_page {
-    
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
     font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
     font-weight: 400;
 
@@ -73,6 +85,7 @@ h1{
     transition:   0.3s ease;
   
    margin-bottom: 25px;
+   margin-left: 44px;
 
 
 }
@@ -86,10 +99,7 @@ body.dark-mode {
     color: #f7f3f3;
 }
 
-body.dark-mode main {
-    background-color: #3f5683;
-    border-color: #fffefe;
-}
+
 
 body.dark-mode a {
     color: #8cb5f3;
@@ -126,4 +136,10 @@ body.dark-mode #contador{
     transition:   0.3s ease;
     margin-left: 12px;
     margin-bottom: 25px;
+}
+
+#conteudo{
+
+    margin-top: 44px;
+    margin-left: 54px;
 }
